@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+   
+
+   <!-- firebase ui javascript and css -->
+   <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCqYKM9x47urEdxMJyMe-eyZoMWBIEmP2k",
+      authDomain: "testing-auth-50f7c.firebaseapp.com",
+      databaseURL: "https://testing-auth-50f7c.firebaseio.com",
+      projectId: "testing-auth-50f7c",
+      storageBucket: "testing-auth-50f7c.appspot.com",
+      messagingSenderId: "621300708797"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+</head>
+<body>
+
+    <div id="firebaseui-auth-container"></div>
+    <div id="app_wrapper" class="container">
+
+      <div id="navbar"></div>
+    </div>
+
+    <script src="firebaseAuthExample.js"></script>
+  
+</body>
+</html>
